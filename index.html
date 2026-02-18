@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seismic RPC Sandbox</title>
+  <link rel="stylesheet" href="css/terminal.css">
+</head>
+<body>
+  <div class="terminal-wrapper">
+    <header class="header">
+      <div class="header-left">
+        <div class="logo">S</div>
+        <span class="header-title">Seismic RPC Sandbox</span>
+      </div>
+      <div class="network-btns">
+        <button class="network-btn active" id="btn-testnet">Testnet</button>
+        <button class="network-btn" id="btn-devnet">Devnet</button>
+      </div>
+    </header>
+
+    <div class="chips-bar">
+      <span class="chips-label">Examples:</span>
+      <div id="chips"></div>
+    </div>
+
+    <div class="output-area" id="output"></div>
+
+    <div class="input-bar">
+      <span class="input-prompt" id="prompt-label">seismic&gt;</span>
+      <input
+        type="text"
+        class="cmd-input"
+        id="cmd-input"
+        placeholder="Type a command or paste JSON-RPC payload..."
+        autocomplete="off"
+        spellcheck="false"
+      >
+      <button class="run-btn" id="run-btn" title="Run">&#9654;</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
